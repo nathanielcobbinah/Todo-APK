@@ -38,8 +38,8 @@
 
 
         <div>
-            {{-- <livewire:header/> --}}
-            @yield('header')
+            <livewire:header/>
+            {{-- @yield('header') --}}
         </div>
 
         <div class="mx-16">

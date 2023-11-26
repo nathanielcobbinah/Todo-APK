@@ -24,20 +24,23 @@
             <span>Today</span>
             <span>⭐</span>
         </li>
+        @foreach ($tasks as $task)
+            <li>{{ $task }}</li>
+        @endforeach
     </ol>
 
     <div>
         <div class="relative">
             <div class="fixed right-5 bottom-24 ">
                 <div>
-                    <form action="" class="flex flex-col w-60 h-auto">
+                    <form wire:submit="addTodo" class="flex flex-col w-60 h-auto">
                         <div>
-                            <label for="">What's your task?</label>
-                            <input type="text" class="text-black mt-1 px-31 py-1 bg-white border shadow-sm border-blue-950 placeholder-gray-800 focus:outline-none focus:border-blue-900 focus:ring-blue-950 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Enter a task">
+                            <label for="task">What's your task?</label>
+                            <input type="text" wire:model.live="task" class="text-black mt-1 px-31 py-1 bg-white border shadow-sm border-blue-950 placeholder-gray-800 focus:outline-none focus:border-blue-900 focus:ring-blue-950 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Enter a task">
                         </div>
                         <div>
-                            <label for="">What's your task?</label>
-                            <input type="datetime-local" class="text-black mt-1 px-1 py-1 bg-white border shadow-sm border-blue-950 placeholder-gray-800 focus:outline-none focus:border-blue-900 focus:ring-blue-950 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Enter a task">
+                            <label for="datetime">What's your task?</label>
+                            <input type="datetime-local" wire:model.live="datetime" class="text-black mt-1 px-1 py-1 bg-white border shadow-sm border-blue-950 placeholder-gray-800 focus:outline-none focus:border-blue-900 focus:ring-blue-950 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="Enter a task">
                         </div>
 
                         <div>

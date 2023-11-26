@@ -26,4 +26,5 @@ Route::view('profile', 'profile')
 
 require __DIR__.'/auth.php';
 
-Route::get('/todo', ShowTodo::class)->name('todo');
+// Route::get('todo', ShowTodo::class)->name('todo');
+Route::view('todo', 'show')->name('todo');

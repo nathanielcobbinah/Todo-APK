@@ -2,25 +2,25 @@
     <ol class="list-outside list-decimal">
         <li class="flex justify-between items-center w-1/2">
             <input type="checkbox" name="" id="">
-            <a href="#">New task</a>
+            <a href="{{ route('todo') }}" wire:navigate>New task</a>
             <span>Today</span>
             <span>⭐</span>
         </li>
         <li class="flex justify-between items-center w-1/2">
             <input type="checkbox" name="" id="">
-            <a href="#">New task</a>
+            <a href="{{ route('todo') }}" wire:navigate>New task</a>
             <span>Today</span>
             <span>⭐</span>
         </li>
         <li class="flex justify-between items-center w-1/2">
             <input type="checkbox" name="" id="">
-            <a href="#">New task</a>
+            <a href="{{ route('todo') }}" wire:navigate>New task</a>
             <span>Today</span>
             <span>⭐</span>
         </li>
         <li class="flex justify-between items-center w-1/2">
             <input type="checkbox" name="" id="">
-            <a href="#">New task</a>
+            <a href="{{ route('todo') }}" wire:navigate>New task</a>
             <span>Today</span>
             <span>⭐</span>
         </li>
@@ -47,7 +47,6 @@
                                 <option value="" class="p-1">Personal</option>
                                 <option value="" class="p-1">Shopping</option>
                                 <option value="" class="p-1">Wishlist</option>
-                                <option value="" class="p-1">Work</option>
                                 <option value="" class="p-1">Work</option>
                             </select>
                         </div>

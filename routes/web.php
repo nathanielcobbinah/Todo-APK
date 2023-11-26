@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+Use App\Livewire\ShowTodo;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,4 @@ Route::view('profile', 'profile')
 
 require __DIR__.'/auth.php';
 
-
+Route::get('/todo', ShowTodo::class)->name('todo');

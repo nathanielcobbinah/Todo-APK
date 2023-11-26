@@ -14,8 +14,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <body class="font-sans text-antialiased bg-gradient-to-b from-black via-blue-950 to-black h-full  h-cover text-gray-400">
+        {{-- <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             <livewire:layout.navigation />
 
             <!-- Page Heading -->
@@ -31,6 +31,27 @@
             <main>
                 {{ $slot }}
             </main>
+        </div> --}}
+
+
+
+
+
+        <div>
+            {{-- <livewire:header/> --}}
+            @yield('header')
         </div>
+
+        <div class="mx-16">
+            @yield('content')
+        </div>
+
+        <div>
+            @yield('footer')
+        </div>
+
+
+
+
     </body>
 </html>

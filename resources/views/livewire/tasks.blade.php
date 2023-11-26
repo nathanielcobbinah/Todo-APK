@@ -48,6 +48,7 @@
                                 <option value="" class="p-1">Shopping</option>
                                 <option value="" class="p-1">Wishlist</option>
                                 <option value="" class="p-1">Work</option>
+                                <option value="" class="p-1">Work</option>
                             </select>
                         </div>
 
